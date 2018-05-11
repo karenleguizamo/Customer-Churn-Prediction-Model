@@ -1,5 +1,12 @@
-Customer-Churn-Prediction-Model
+CHURN PREDICTION MODEL
 
+
+
+
+
+
+
+Buisness Problem description:
 The bank that has recorded the customer information shown in the dataset has been seeing unusually high churn rates i.e. churn is when a customer terminates his/her relation with the company/organization and/or no longer opts for the services provided by the company. In such a scenario, the company wants to understand what the problem is and address that problem. 
 
 Hence, the company assessed every relevant information they had on the customers and created the dataset. 

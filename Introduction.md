@@ -7,7 +7,7 @@
 
 
 ## Buisness Problem description:
-A particular bank has recorded the customer information has been seeing unusually high churn rates i.e. churn is when a customer terminates his/her relation with the company/organization and/or no longer opts for the services provided by the company. In such a scenario, the company wants to understand what the problem is and address that problem. 
+A international bank has been seeing unusually high churn rates. In such a scenario, the company wants to understand what the problem is and address that problem. Hence it has prepared a dataset with all the relevant customer information.
 
 Hence, the company assessed every relevant information they had on the customers and created the dataset. 
 The last attribute tells whether the customer exited the bank after a certain period.

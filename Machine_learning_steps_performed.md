@@ -5,7 +5,8 @@ We will now take a look at the machine learning algorithms that are implemented.
 •	XgBoost
 
 
-Programming logic
+
+Programming logic:
 a)	Encoding categorical variables as factors (for SVM and ANN models only):
 This is the first data pre-processing step where the categorical variables in the form of characters are converted into numeric factors. Hence the variables ‘France’, ‘Spain’ and ‘Germany’ are replaced by numeric values 1,2 and 3 respectively. Similarly the gender variables ‘Female’ and ‘Male’ are replaced by numbers 1 and 2 respectively. This step helps reduce the computational complexity and improves overall execution speed
 

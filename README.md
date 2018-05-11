@@ -7,7 +7,7 @@ CHURN PREDICTION MODEL
 
 
 Buisness Problem description:
-The bank that has recorded the customer information shown in the dataset has been seeing unusually high churn rates i.e. churn is when a customer terminates his/her relation with the company/organization and/or no longer opts for the services provided by the company. In such a scenario, the company wants to understand what the problem is and address that problem. 
+A particular bank has recorded the customer information has been seeing unusually high churn rates i.e. churn is when a customer terminates his/her relation with the company/organization and/or no longer opts for the services provided by the company. In such a scenario, the company wants to understand what the problem is and address that problem. 
 
 Hence, the company assessed every relevant information they had on the customers and created the dataset. 
 The last attribute tells whether the customer exited the bank after a certain period.
@@ -21,3 +21,7 @@ This kind of analysis is valuable as well because it doesn’t just have to be l
 We know that whenever we have a scenario where we have a binary outcome and lots of independent variables, we can build a proper robust model which will predict which of the factors influence the outcome.
 
 Therefore, the problem presented is a classification problem: i.e. to predict the response variable (i.e. ‘Exited’ in our case)
+
+
+Introduction to the dataset: 
+The dataset is downloaded from Kaggle and contains information about 10,000 customers analyzed by a bank over a certain period along with 14 attributes. The last attribute ‘Exited’ is a binary response variable which tells us whether the customer exited the bank after a certain period of time (1 if the customer exits. 0 otherwise).

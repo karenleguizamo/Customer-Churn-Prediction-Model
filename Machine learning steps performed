@@ -1,0 +1,5 @@
+III. Machine learning algorithms used:
+We will now take a look at the machine learning algorithms that are implemented. Three ML algorithms are implemented to help us build a robust prediction model. They are as follows:
+•	Support Vector Machine
+•	Artificial Neural Network
+•	XgBoost

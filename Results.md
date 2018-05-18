@@ -10,3 +10,4 @@ Misclassification rate:
 Support Vector Machine: 	14.41 %
 Artificial Neural Network:13.85 %
 XGBoost:                	10.93 %
+

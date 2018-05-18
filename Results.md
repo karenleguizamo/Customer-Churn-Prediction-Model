@@ -1,9 +1,9 @@
 Two most important performance metrics i.e accuracies and misclassification rates for all the three classifiers used are calculated and are as follows:
 ## Accuracies:
 
-Support Vector Machine:     85.59 %
-Artificial Neural Network:  86.15 %
-XGBoost:                  	89.07 %
+### Support Vector Machine:     85.59 %
+### Artificial Neural Network:  86.15 %
+### XGBoost:                  	89.07 %
 
 ## Misclassification rate:
 

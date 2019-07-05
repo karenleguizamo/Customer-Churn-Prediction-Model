@@ -1,8 +1,8 @@
 #SVM
 # Importing the dataset
-dataset = read.csv('Churn_Modelling.csv')
+dataset = read.csv("C:/Users/Karen Leguizamo/Customer-Churn-Prediction-Model/dataset.csv")
 dataset = dataset[4:14]
-
+View(dataset)
 # Encoding the categorical variables as factors
 dataset$Geography = as.numeric(factor(dataset$Geography,
                                       levels = c('France', 'Spain', 'Germany'),
@@ -16,11 +16,16 @@ dataset$Gender = as.numeric(factor(dataset$Gender,
 library(caTools)
 set.seed(123)
 split = sample.split(dataset$Exited, SplitRatio = 0.8)
+View(split)
+
+summary(split)
+
 training_set = subset(dataset, split == TRUE)
 test_set = subset(dataset, split == FALSE)
 
 # Feature Scaling
-training_set[-11] = scale(training_set[-11])
+training_set[-11] = scale(training_set[-11])### nO sabemos que hace exactamente
+View(training_set[-11])
 test_set[-11] = scale(test_set[-11])
 
 # Applying PCA
@@ -31,7 +36,10 @@ library(e1071)
 pca = preProcess(x = training_set[-11], method = 'pca', pcaComp = 10)
 training_set = predict(pca, training_set)
 
-test_set = predict(pca, test_set)
+pca1 = preProcess(x = test_set[-11], method = 'pca', pcaComp = 10)###esto no estaba
+test_set = predict(pca1, test_set)
+summary(pca1)
+
 
 
 # Fitting Kernel SVM to the Training set
@@ -65,7 +73,7 @@ accuracy_svm = mean(as.numeric(cv))
 
 # ANN
 # Importing the dataset
-dataset = read.csv('Churn_Modelling.csv')
+dataset = read.csv("C:/Users/Karen Leguizamo/Customer-Churn-Prediction-Model/dataset.csv")
 dataset = dataset[4:14]
 
 # Encoding the categorical variables as factors
@@ -140,7 +148,7 @@ accuracy_ann = mean(as.numeric(cv))
 
 # XGBoost
 # Importing the dataset
-dataset = read.csv('Churn_Modelling.csv')
+dataset = read.csv("C:/Users/Karen Leguizamo/Customer-Churn-Prediction-Model/dataset.csv")
 dataset = dataset[4:14]
 
 # Encoding the categorical variables as factors
@@ -150,6 +158,8 @@ dataset$Geography = as.numeric(factor(dataset$Geography,
 dataset$Gender = as.numeric(factor(dataset$Gender,
                                    levels = c('Female', 'Male'),
                                    labels = c(1, 2)))
+
+
 
 # Splitting the dataset into the Training set and Test set
 # install.packages('caTools')
